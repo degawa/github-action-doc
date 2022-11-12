@@ -1,9 +1,9 @@
-!>モジュール[[greeting(module)]]で定義されている手続をテストする．
+!>モジュール`[[greeting(module)]]`で定義されている手続をテストする．
 !>
 !>テストには
 !>
 !>- 宛名を指定して歓迎のメッセージを作成する手続
-!>[[greeting(module):create_greeting_message_to(procedure)]]
+!>`[[greeting(module):create_greeting_message_to(function)]]`
 !>に対するテスト
 !>
 !>が含まれる．
