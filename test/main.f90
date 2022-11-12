@@ -12,13 +12,17 @@ program main
     use :: greeting
     implicit none
 
+    interface assert
+        procedure :: assert_str_str
+    end interface
+
     character(*), parameter :: name = "GitHub Actions"
     character(*), parameter :: expected = "Hello "//name//" !"
     character(:), allocatable :: actual
 
     actual = create_greeting_message_to(name)
 
-    call assert_str_str(actual, expected)
+    call assert(actual, expected)
 
 contains
     !>二つの文字列`actual`, `expected`が等しいかを検査する．
