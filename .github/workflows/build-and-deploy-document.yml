@@ -34,7 +34,7 @@ jobs:
           if-no-files-found: error
 
       - name: Depoly Document
-        uses: JamesIves/github-pages-depoly-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master'}}
         with:
           branch: gh-pages
