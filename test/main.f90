@@ -8,6 +8,10 @@
 !>
 !>が含まれる．
 !>
+!>|テスト名|テスト内容|
+!>|:---|:---|
+!>|greeting test|定義した`name`を`create_greeting_message_to`に渡し，想定通りの文字列が返ってくるかを確認する．|
+!>
 program main
     use :: greeting
     implicit none

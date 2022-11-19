@@ -6,6 +6,10 @@
 !>
 !>が含まれる．
 !>
+!>|エンティティ名|分類|
+!>|:---|:---|
+!>|create_greeting_message_to|function|
+!>
 module greeting
     implicit none
     private
