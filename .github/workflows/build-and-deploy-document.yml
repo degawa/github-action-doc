@@ -25,6 +25,7 @@ jobs:
       - name: Build Document
         run: |
           ford api-doc-ford-settings.md
+          find ./api-doc -type f -name '*.html' | xargs sed -i 's/<table>/<table class="table">/g'
 
       - name: Upload Document
         uses: actions/upload-artifact@v2
